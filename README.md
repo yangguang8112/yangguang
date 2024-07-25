@@ -70,3 +70,16 @@ Some examples:
 - AcadHomepage incorporates Font Awesome, which is distributed under the terms of the SIL OFL 1.1 and MIT License.
 - AcadHomepage is influenced by the github repo [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes), which is distributed under the MIT License.
 - AcadHomepage is influenced by the github repo [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io), which is distributed under the MIT License.
+
+
+
+### 安装环境
+ruby一定要是2.7版本的
+
+https://blog.csdn.net/Sunshine_ZYT/article/details/122052721
+
+算了，太麻烦了，还是直接用docker了
+
+docker run --user 0:0 --rm -it -p 4000:4000 -v $(pwd):/website ruby2.7_gem:0.0.6 bash
+
+我把镜像传到habor上了  harbor.genscigroup.com/alg/ruby2.7_gem:0.0.6

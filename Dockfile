@@ -1,0 +1,5 @@
+FROM harbor.genscigroup.com/proxy/ytborg/ruby2.7:0.0.6
+
+COPY yangguang /project/yangguang
+RUN cd /project/yangguang
+RUN bundle install
